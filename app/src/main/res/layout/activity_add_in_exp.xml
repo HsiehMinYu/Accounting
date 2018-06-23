@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgblue"
+    tools:context=".Activity.AddInExpActivity">
+
+    <LinearLayout
+        android:id="@+id/addpagelayoutmid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/addpagelayoutbtm"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/addpagemoneytext"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/bgblue"
+            android:cursorVisible="false"
+            android:gravity="center_vertical"
+            android:hint="0"
+            android:textColorHint="@color/white"
+            android:imeOptions="actionDone"
+            android:inputType="number|phone"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/addpagedatetext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/bgblue"
+            android:gravity="center_vertical"
+            android:hint="@string/date_hint"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/addpagenotetext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/addpage_text_background"
+            android:cursorVisible="false"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:hint="@string/note_hint"
+            android:imeOptions="actionDone"
+            android:maxLength="30"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/addpagecategorytext"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/addpage_text_background"
+            android:gravity="center_vertical"
+            android:hint="@string/category_hint"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+
+        <ImageView
+            android:id="@+id/addpagetoggleiv"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/bgblue"
+            android:checked="false"
+            android:src="@drawable/tougglesicons" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/addpagerecycleview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addpagelayoutbtm"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/addpagesavebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/addpage_btn_background"
+            android:text="儲存"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

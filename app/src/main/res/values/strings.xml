@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SimpleAccounting</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_data_msg">目前無資料</string>
+    <string name="date_hint">日期</string>
+    <string name="money_hint">0</string>
+    <string name="note_hint">備註</string>
+    <string name="category_hint">類別</string>
+    <string name="search_start_time">起始時間</string>
+    <string name="search_end_time">終止時間</string>
+</resources>
