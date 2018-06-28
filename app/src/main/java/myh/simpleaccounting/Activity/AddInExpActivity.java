@@ -156,7 +156,7 @@ public class AddInExpActivity extends AppCompatActivity implements View.OnClickL
         //etmoney.setText(record.getMoney());
         tvcategory.setText(record.getCategory());
         etnote.setText(record.getNote());
-        Utils.showToast("editrefresh",this);
+        //Utils.showToast("editrefresh",this);
 
 
     }

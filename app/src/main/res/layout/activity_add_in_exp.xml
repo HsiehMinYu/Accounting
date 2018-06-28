@@ -101,6 +101,7 @@
             android:layout_weight="1"
             android:background="@drawable/addpage_btn_background"
             android:text="儲存"
+            android:textColor="@color/white"
             android:textStyle="bold" />
 
     </LinearLayout>
