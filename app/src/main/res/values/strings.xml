@@ -10,4 +10,7 @@
     <string name="category_hint">類別</string>
     <string name="search_start_time">起始時間</string>
     <string name="search_end_time">終止時間</string>
+    <string name="dialog_edit">編輯</string>
+    <string name="dialog_delete">刪除</string>
+    <string name="dialog_cancel">取消</string>
 </resources>

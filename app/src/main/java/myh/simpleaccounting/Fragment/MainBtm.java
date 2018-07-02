@@ -95,7 +95,7 @@ public class MainBtm extends Fragment implements AdapterView.OnItemLongClickList
 
         AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
 
-        String[] options = {"Edit", "Remove"};
+        String[] options = {getResources().getString(R.string.dialog_edit), getResources().getString(R.string.dialog_delete)};
 
         builder.setItems(options, new DialogInterface.OnClickListener() {
             @Override
@@ -121,7 +121,7 @@ public class MainBtm extends Fragment implements AdapterView.OnItemLongClickList
             }
         });
 
-        builder.setNegativeButton("Cancel", null);
+        builder.setNegativeButton(getResources().getString(R.string.dialog_cancel), null);
         builder.create().show();
     }
 

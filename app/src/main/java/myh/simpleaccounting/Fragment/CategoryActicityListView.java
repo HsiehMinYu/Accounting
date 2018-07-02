@@ -121,7 +121,7 @@ public class CategoryActicityListView extends Fragment implements AdapterView.On
 
         AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
 
-        String[] options = {"Edit", "Remove"};
+        String[] options = {getResources().getString(R.string.dialog_edit), getResources().getString(R.string.dialog_delete)};
 
         builder.setItems(options, new DialogInterface.OnClickListener() {
             @Override
@@ -149,7 +149,7 @@ public class CategoryActicityListView extends Fragment implements AdapterView.On
             }
         });
 
-        builder.setNegativeButton("Cancel", null);
+        builder.setNegativeButton(getResources().getString(R.string.dialog_cancel), null);
         builder.create().show();
     }
 
